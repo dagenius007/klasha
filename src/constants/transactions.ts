@@ -1,0 +1,38 @@
+export const transactions = [
+    {
+      transactionId: "GB124QWERTY12346",
+      source: "GTB",
+      customerName: "Mike Owen",
+      customerPhone: "0223337281",
+      amount: "$230.00",
+      request: "24.08.2021",
+      status: "Pending",
+    },
+    {
+        transactionId: "CB328ABCEDF23416",
+        source: "UBA",
+        customerName: "Steve O'Shassy",
+        customerPhone: "0982764829",
+        amount: "$480.00",
+        request: "24.08.2021",
+        status: "Success",
+      },
+      {
+        transactionId: "GB124QWERTY12346",
+        source: "GTB",
+        customerName: "Mike Owen",
+        customerPhone: "0223337281",
+        amount: "$230.00",
+        request: "24.08.2021",
+        status: "Pending",
+      },
+      {
+        transactionId: "GB124QWERTY12346",
+        source: "GTB",
+        customerName: "Mike Owen",
+        customerPhone: "0223337281",
+        amount: "$230.00",
+        request: "24.08.2021",
+        status: "Pending",
+      },
+  ];

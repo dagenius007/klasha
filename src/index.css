@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.nav-icon svg{
+  stroke: #0A0A0A;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.menu:hover svg{
+  stroke: #EF2C5A;
+}
+
+.menu.active {
+  color: #EF2C5A;
+}
+
+.menu.active svg{
+  stroke: #EF2C5A;
+}
+
+[role=navigation] {
+  display: flex;
+  border : 1px solid #E8E8E8;
+  width: 375px;
+  color: #A39D9E;
+  justify-content: space-between;
+  margin-left: auto;
+  padding: 19px 8px;
+  height: 38px;
+  align-items: center;
+  margin: 16px auto;
+  margin-right: 0;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+[role=navigation] [aria-current="page"] {
+  background-color: #F0F0F0;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  display: block;
+  color:#0A0A0A;
+  font-weight: 600;
+}
+
+.slideIn {
+  transition: 1s;
+  animation: slideIn 1s ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.slideOut {
+  transition: 1s;
+  animation: slideOut 1s ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    left: -320px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -320px;
+  }
 }
